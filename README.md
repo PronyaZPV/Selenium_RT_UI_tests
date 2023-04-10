@@ -5,10 +5,7 @@
 **Требования** с корректировками:
 https://docs.google.com/document/d/15ZNFNnPgu0GtVidPXyGa2CzLnhnuIhdNJyEuei-J5LU/edit?usp=sharing
 
-**Тест-кейсы**:
-https://docs.google.com/spreadsheets/d/1nFmKOr62rsXvQe80Ogy-BE0OgQQq7VlD2G7iXBarg1M/edit#gid=0
-
-**Баг-репорты**:
+**Тест-кейсы и баг-репорты** (на разных листах):
 https://docs.google.com/spreadsheets/d/1nFmKOr62rsXvQe80Ogy-BE0OgQQq7VlD2G7iXBarg1M/edit?usp=sharing
 
 **Репозиторий с кодом**:
