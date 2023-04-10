@@ -33,8 +33,9 @@ https://github.com/PronyaZPV/Selenium_RT_UI_tests
 Актуальный можете скачать по ссылке - https://chromedriver.chromium.org/downloads
 
 
-4. Для запуска тестов, находясь в папке с тестами `/tests` можно использовать, например - `python -m pytest tests_rt_ui.py`
-
+4. Для запуска тестов, находясь в папке с тестами `/tests` можно использовать, например:
+- `python -m pytest tests_rt_ui.py` для Windows
+- `python3 -m pytest tests_rt_ui.py` для MacOS
 
 
 ### Структура проекта
