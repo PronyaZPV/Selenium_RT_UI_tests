@@ -58,6 +58,9 @@ class Locators:
 
 
 class AuthPage(BasePage):
+    """ Класс, содержащий все необходимые методы для проверки страницы авторизации
+        """
+
     LIST_TABS_MENU_ELEMENTS = '\n'.join(Locators.LOCATORS_TABS_MENU_ELEMENTS.keys())
 
     def enter_login(self, login):
@@ -179,12 +182,10 @@ class AuthPage(BasePage):
             """
         return self.find_element(Locators.LOCATOR_SOCIAL_PROVIDERS, time=2)
 
-
     def social_vk(self):
         """ Вывод ссылки на ВКонтакте
             """
         return self.find_element(Locators.LOCATOR_SOCIAL_VK, time=10)
-
 
     def social_ya(self):
         """ Вывод ссылки на Яндекс
@@ -215,6 +216,3 @@ class AuthPage(BasePage):
         """ Вывод ссылки на форму регистрации из формы авторизации
             """
         return self.find_element(Locators.LOCATOR_INPUT_LOGIN_TEXT, time=2).get_attribute("value")
-
-
-

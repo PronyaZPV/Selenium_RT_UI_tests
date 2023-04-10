@@ -12,22 +12,35 @@ class Locators:
     LOCATOR_FOOTER_AGREEMENT = (By.ID, "rt-footer-agreement-link")
 
 
-
 class Footer(BasePage):
+    """ Класс, содержащий все необходимые методы для проверки футера
+        """
     def footer(self):
+        """ Вывод футера
+            """
         return self.find_element(Locators.LOCATOR_ALL_FOOTER, time=10)
 
     def footer_info(self):
+        """ Вывод блока информации в футере
+            """
         return self.find_element(Locators.LOCATOR_FOOTER_INFO, time=10)
 
     def footer_phone(self):
+        """ Вывод номера телефона поддержки, указанного в футере
+            """
         return self.find_element(Locators.LOCATOR_FOOTER_PHONE, time=10)
 
     def footer_copyright(self):
+        """ Вывод информации об ©авторском праве
+            """
         return self.find_element(Locators.LOCATOR_FOOTER_COPYRIGHT, time=10)
 
     def footer_cookies(self):
+        """ Вывод гиперссылки на Cookies
+            """
         return self.find_element(Locators.LOCATOR_FOOTER_COOKIES, time=10)
 
     def footer_agreement(self):
+        """ Вывод гиперссылки на пользовательское соглашение в футере
+            """
         return self.find_element(Locators.LOCATOR_FOOTER_AGREEMENT, time=10)

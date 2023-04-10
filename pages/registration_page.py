@@ -19,6 +19,8 @@ class Locators:
 
 
 class RegistrationPage(BasePage):
+    """ Класс, содержащий все необходимые методы для проверки страницы регистрации
+        """
     @staticmethod
     def go_to_registration_page(browser):
         """ Открытие формы регистрации
@@ -84,5 +86,3 @@ class RegistrationPage(BasePage):
         """ Вывод любой валидационной ошибки в форме регистрации
             """
         return self.find_element(Locators.LOCATOR_VALIDATION_ERROR, time=2)
-
-

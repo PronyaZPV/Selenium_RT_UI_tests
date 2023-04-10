@@ -6,18 +6,26 @@ from selenium.webdriver.common.by import By
 
 
 class BasePage:
+    """ Класс, содержащий базовые методы для проверки сайта РТ
+        """
     def __init__(self, driver):
         self.driver = driver
         self.base_url = "https://b2c.passport.rt.ru/"
 
     def go_to_site(self):
+        """ Открытие страницы авторизации
+            """
         return self.driver.get(self.base_url)
 
     def find_element(self, locator, time=10):
+        """ Метод для поиска единичных элементов на странице
+            """
         return WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
                                                       message=f'Not find {locator}')
 
     def find_elements(self, locator, time=10):
+        """ Метод для поиска группы элементов на странице
+            """
         return WebDriverWait(self.driver, time).until(EC.presence_of_all_elements_located(locator),
                                                       message=f'Not find {locator}')
 
@@ -38,4 +46,3 @@ class BasePage:
         """ Вывод заголовка оферты пользовательского соглашения
             """
         return self.find_element((By.CSS_SELECTOR, "h1[class='offer-title']"), time=5)
-

@@ -10,7 +10,7 @@ from ..parameters import *
 
 
 @pytest.mark.auth
-def test_auth_page_elements(browser):   #RT_AUTH-001
+def test_auth_page_elements(browser):   # RT_AUTH-001
     auth_page = AuthPage(browser)
     footer = Footer(browser)
     header = Header(browser)

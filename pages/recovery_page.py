@@ -8,5 +8,9 @@ class Locators:
 
 
 class RecoveryPage(BasePage):
+    """ Класс, содержащий все необходимые методы для проверки страницы восстановления пароля
+        """
     def form_title(self):
+        """ Вывод заголовка отображаемой формы ввода данных
+            """
         return self.find_element(Locators.LOCATOR_FORM_TITLE, time=10)
